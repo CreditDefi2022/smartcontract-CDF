@@ -51,7 +51,7 @@ contract  Token is Context, ERC20, Ownable {
     constructor(address _BUSD, address _addressReceiver, address _addressTreasury, address _addressBurn)
         ERC20(" CreditDefi", "CDF")
     {
-        _mint(msg.sender, 10**7 * 10**18);
+        _mint(msg.sender, 10**10 * 10**18);
         adminlist[msg.sender] = 1;
 
         BUSD = _BUSD;
